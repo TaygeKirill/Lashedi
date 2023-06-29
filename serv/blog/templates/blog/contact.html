@@ -1,0 +1,47 @@
+{% extends 'blog/base.html' %}
+{% block title %}Контакты{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Наши контакты:</h1>
+    <hr>
+    <br>
+</div>
+
+<div class="list-group">
+  <a href="{% url 'contact' %}" class="list-group-item list-group-item-action active" aria-current="true">
+    <h3>Наши Контакты:</h3>
+  </a>
+  <a  class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+       <p>График работы: <strong>ежедневно с 8:00 до 18:00.</strong></p>
+    </div></a>
+  <a  class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <p>Телефоны:<br />
+      <span>+375 33</span> 636-39-38<br />
+      <span>+375 33</span> 340-71-13</p><p>
+    </div>
+  </a>
+  <a  class="list-group-item list-group-item-action" href="http://t.me/dishka_2303" target="_blank">
+
+      Telegram: @Lashedi</br />
+  </a>
+  <a  class="list-group-item list-group-item-action" href="https://www.instagram.com/lashesdi_minsk/" target="_blank">
+
+      Instagram: @Lashedi</br />
+  </a>
+  <a  class="list-group-item list-group-item-action" href="https://goo.gl/maps/58bGKDvSZBMrCu7T7">
+    <div class="d-flex w-100 justify-content-between">
+      <p>Мы ждем вас по адресу:<br />
+      <span>г.Минск</span> р-он Лошица<br />
+      <span>ул.Янки Лучины</span> д.36</p>
+    </div>
+  </a>
+
+</div>
+
+
+
+
+{% endblock %}
+

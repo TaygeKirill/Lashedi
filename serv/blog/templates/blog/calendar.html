@@ -1,0 +1,54 @@
+{% extends 'blog/base.html' %}
+{% block title %}Онлайн запись{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Онлайн запись:</h1>
+    <hr>
+    <br>
+
+    <section>
+        <div class="container class_form">
+            <h1 class="black">Оставь заявку</h1>
+            <div class="row justify-content-center">
+            <form action="{% url 'calendar' %}" method="POST" style="width: 50%;">
+                {% csrf_token %}
+                <label  class="black">Имя</label><br>
+                {{form.site_name}}
+                <label class="black">Телефон</label><br>
+                {{form.site_phone}}
+                <label class="black">Какое время вас интересует</label><br>
+                {{form.site_time}}
+                <label class="black">Выберите дату</label><br>
+                {{form.site_day}}
+
+                <div style="float: right;" class="form-group row">
+                    <button  type="submit"  class="btn btn-success">Записаться</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% endblock %}
+
